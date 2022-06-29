@@ -1,5 +1,6 @@
 body,
-section,
+p,
+span,
 div {
   margin: 0rem;
 }
@@ -554,4 +555,7 @@ div {
 
 span.ativo {
   border: solid 3px red;
+}
+div.ativo {
+  border: solid 1px red;
 }
