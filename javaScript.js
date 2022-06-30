@@ -12,6 +12,11 @@ function SeletorPecas(seletor) {
           elemento[c].classList.add(classe);
           // Movimentos do peão Brnaco
           if (elemento[c].innerHTML === '<span class="peaoBranco">♙</span>') {
+            /*peacaBrancas.elements.forEach((item) => {
+              item.addEventListener("click", () => {
+                console.log(item.parentNode.previousElementSibling);
+              });
+            });*/
             if (elemento[c - 1]) elemento[c - 1].classList.add(classe);
             if (elemento[c - 2]) elemento[c - 2].classList.add(classe);
             if (elemento[c - 9]) elemento[c - 9].classList.add(classe);
@@ -50,6 +55,9 @@ function SeletorPecas(seletor) {
 const celula = new SeletorPecas("div");
 const peacaPretas = new SeletorPecas(
   ".peaoPreto, .torrePreta, .reiPreto, .rainhaPreta, .cavaloPreto, .bispoPreto"
+);
+const peacaBrancas = new SeletorPecas(
+  ".peaoBranco, .torreBranca, .reiBranco, .rainhaBranca, .cavaloBranco, .bispoBranco"
 );
 
 celula.addClass("ativo");
