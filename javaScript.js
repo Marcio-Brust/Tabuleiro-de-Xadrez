@@ -19,7 +19,6 @@ function SeletorPecas(seletor) {
           }
           // Movimentos do peão Preto
           if (elemento[c].innerHTML === '<span class="peaoPreto">♟</span>') {
-            // peacaPretas.elements.forEach((item) => {});
             if (elemento[c + 1]) elemento[c + 1].classList.add(classe);
             if (elemento[c + 2]) elemento[c + 2].classList.add(classe);
             if (elemento[c + 9]) elemento[c + 9].classList.add(classe);
