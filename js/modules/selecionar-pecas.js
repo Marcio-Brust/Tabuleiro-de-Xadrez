@@ -4,7 +4,7 @@ export default function initiSelecionarPecas() {
 
   function pontoDoClick(events) {
     if (events.target.className === "peaoBranco") {
-      console.log(this);
+      console.log("oiS");
     }
   }
   pontoPeca.forEach((item) => {
@@ -13,3 +13,6 @@ export default function initiSelecionarPecas() {
     });
   });
 }
+
+//nextElementSibling proximo elemento
+// previousElementSibling elemento anterior
