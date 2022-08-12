@@ -8,7 +8,9 @@ export default function initiAddClass() {
           for (let i = 0; i < elemento.length; i++) {
             elemento[i].classList.remove(classe);
           }
-          item.classList.add(classe);
+          if (item.innerHTML !== "") {
+            item.classList.add(classe);
+          }
         });
       });
     };
