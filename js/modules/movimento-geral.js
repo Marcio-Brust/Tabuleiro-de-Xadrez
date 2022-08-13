@@ -3,9 +3,18 @@ export default function initiMovimentoGeral() {}
 const pontoPeca = Array.from(document.querySelectorAll("div"));
 const eventos = ["click", "tochstart"];
 
-function movimentoGeral() {
-  if (this.className === "branco") {
-    const peca = this.innerHTML;
+//console.log(pecasBrancas);
+
+function movimentoGeral(events) {
+  const classepeca = events.target.className;
+  const peca = document.querySelector(".ativo.branco");
+  const pecaPreta = document.querySelector(".ativo.preto");
+  if (peca) {
+    if (this.className === "ativo") {
+      this.innerHTML = peca.innerHTML;
+      peca.innerHTML = "";
+      this.classList.add("branco");
+    }
   }
 }
 
