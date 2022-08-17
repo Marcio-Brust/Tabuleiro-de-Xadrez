@@ -1,8 +1,6 @@
 export default function initiMovimentoPeaoBranco() {
   const pontoPeca = Array.from(document.querySelectorAll("div"));
   const eventos = ["click", "tochstart"];
-  //const branco = Array.from(document.querySelectorAll(".branco"));
-  //const preto = Array.from(document.querySelectorAll(".preto"));
 
   function pontoDoClick(events) {
     if (events.target.className === "peaoBranco") {
@@ -20,6 +18,11 @@ export default function initiMovimentoPeaoBranco() {
             pontoPeca[c - 1].classList.add("ativo");
             if (pontoPeca[c - 2]) {
               if (
+                pontoPeca[c - 2].classList.contains("branco") ||
+                pontoPeca[c - 2].classList.contains("preto")
+              ) {
+                null;
+              } else if (
                 pontoPeca[c].id === "a2" ||
                 pontoPeca[c].id === "b2" ||
                 pontoPeca[c].id === "c2" ||
@@ -57,6 +60,7 @@ export default function initiMovimentoPeaoBranco() {
       }
     }
   }
+
   pontoPeca.forEach((item) => {
     eventos.forEach((click) => {
       item.addEventListener(click, pontoDoClick);

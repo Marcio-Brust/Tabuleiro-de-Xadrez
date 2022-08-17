@@ -9,7 +9,17 @@ export default function initiAddClass() {
             elemento[i].classList.remove(classe);
           }
           if (item.innerHTML !== "") {
-            item.classList.add(classe);
+            const tabuleiro = document.querySelector(".tabuleiro");
+            if (tabuleiro.classList.contains("movimentoBranco")) {
+              if (item.classList.contains("branco")) {
+                item.classList.add(classe);
+              }
+            }
+            if (tabuleiro.classList.contains("movimentoPreto")) {
+              if (item.classList.contains("preto")) {
+                item.classList.add(classe);
+              }
+            }
           }
         });
       });
