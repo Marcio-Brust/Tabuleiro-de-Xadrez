@@ -2,13 +2,13 @@ export default function initiMovimentoPeaoPreto() {
   const pontoPeca = Array.from(document.querySelectorAll("div"));
   const eventos = ["click", "tochstart"];
 
-
   function pontoDoClick(events) {
     if (events.target.className === "peaoPreto") {
       for (let c = 0; c < pontoPeca.length; c++) {
         if (
           pontoPeca[c].classList.contains("ativo") &&
-          pontoPeca[c].classList.contains("preto")
+          pontoPeca[c].classList.contains("preto") &&
+          pontoPeca[c].classList.contains("movimento")
         ) {
           if (
             pontoPeca[c + 1].classList.contains("preto") ||

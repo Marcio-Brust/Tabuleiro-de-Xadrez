@@ -6,8 +6,8 @@ const eventos = ["click", "tochstart"];
 //console.log(pecasBrancas);
 
 function movimentoGeral(events) {
-  const peca = document.querySelector(".ativo.branco");
-  const pecaPreta = document.querySelector(".ativo.preto");
+  const peca = document.querySelector(".ativo.branco.movimento");
+  const pecaPreta = document.querySelector(".ativo.preto.movimento");
   const tabuleiro = document.querySelector(".tabuleiro");
   if (tabuleiro.classList.contains("movimentoBranco")) {
     if (peca) {
@@ -24,6 +24,8 @@ function movimentoGeral(events) {
           this.classList.remove("preto");
           tabuleiro.classList.remove("movimentoBranco");
           tabuleiro.classList.add("movimentoPreto");
+          peca.classList.remove("movimento");
+          peca.classList.remove("branco");
         }
       }
     }
@@ -42,6 +44,8 @@ function movimentoGeral(events) {
           this.classList.remove("branco");
           tabuleiro.classList.remove("movimentoPreto");
           tabuleiro.classList.add("movimentoBranco");
+          pecaPreta.classList.remove("movimento");
+          pecaPreta.classList.remove("preto");
         }
       }
     }

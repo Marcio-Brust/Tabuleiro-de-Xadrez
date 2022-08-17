@@ -7,7 +7,8 @@ export default function initiMovimentoPeaoBranco() {
       for (let c = 0; c < pontoPeca.length; c++) {
         if (
           pontoPeca[c].classList.contains("ativo") &&
-          pontoPeca[c].classList.contains("branco")
+          pontoPeca[c].classList.contains("branco") &&
+          pontoPeca[c].classList.contains("movimento")
         ) {
           if (
             pontoPeca[c - 1].classList.contains("branco") ||
