@@ -5,55 +5,96 @@ export default function initiMovimentoBispoBranco() {
 
   function pontoDoClick(events) {
     if (tabuleiro.classList.contains("movimentoBranco")) {
-      if (events.target.className === "bispoBranco") {
-        for (let c = 0; c < pontoPeca.length; c++) {
-          if (
-            pontoPeca[c].classList.contains("ativo") &&
-            pontoPeca[c].classList.contains("branco") &&
-            pontoPeca[c].classList.contains("movimento")
-          ) {
-            if (pontoPeca[c + 7]) {
+      {
+        if (events.target.className === "bispoBranco") {
+          for (let i = 0; i < pontoPeca.length; i++) {
+            if (pontoPeca[i].classList.contains("movimento")) {
               for (let n = 0; ; n += 7) {
-                if (pontoPeca[c + 7]) {
-                  if (pontoPeca[c + 7 + n].classList.contains("branco")) {
-                    break;
-                  }
-                  pontoPeca[c + 7 + n].classList.add("ativo");
-                  if (pontoPeca[c + 7 + n].classList.contains("preto")) {
-                    break;
-                  }
+                if (pontoPeca[i + 7 + n].classList.contains("branco")) {
+                  break;
                 }
+                if (pontoPeca[i + 7 + n].classList.contains("preto")) {
+                  console.log("oi");
+                  pontoPeca[i + 7 + n].classList.add("ativo");
+                  break;
+                }
+                pontoPeca[i + 7 + n].classList.add("ativo");
+                console.log(n);
                 if (
-                  pontoPeca[c + 7 + n + 7] === undefined ||
-                  pontoPeca[c + 7 + n + 7].classList.contains("h8") ||
-                  pontoPeca[c + 7 + n + 7].classList.contains("g8") ||
-                  pontoPeca[c + 7 + n + 7].classList.contains("f8") ||
-                  pontoPeca[c + 7 + n + 7].classList.contains("e8") ||
-                  pontoPeca[c + 7 + n + 7].classList.contains("d8") ||
-                  pontoPeca[c + 7 + n + 7].classList.contains("c8") ||
-                  pontoPeca[c + 7 + n + 7].classList.contains("b8") ||
-                  pontoPeca[c + 7 + n + 7].classList.contains("a8")
+                  pontoPeca[i + 7 + n].classList.contains("h8") ||
+                  pontoPeca[i + 7 + n].classList.contains("g8") ||
+                  pontoPeca[i + 7 + n].classList.contains("f8") ||
+                  pontoPeca[i + 7 + n].classList.contains("e8") ||
+                  pontoPeca[i + 7 + n].classList.contains("d8") ||
+                  pontoPeca[i + 7 + n].classList.contains("c8") ||
+                  pontoPeca[i + 7 + n].classList.contains("b8") ||
+                  pontoPeca[i + 7 + n].classList.contains("a8") ||
+                  pontoPeca[i + 7 + n].classList.contains("h1") ||
+                  pontoPeca[i + 7 + n].classList.contains("g1") ||
+                  pontoPeca[i + 7 + n].classList.contains("e1") ||
+                  pontoPeca[i + 7 + n].classList.contains("d1") ||
+                  pontoPeca[i + 7 + n].classList.contains("c1") ||
+                  pontoPeca[i + 7 + n].classList.contains("b1") ||
+                  pontoPeca[i + 7 + n].classList.contains("a1") ||
+                  pontoPeca[i + 7 + n].classList.contains("a2") ||
+                  pontoPeca[i + 7 + n].classList.contains("a3") ||
+                  pontoPeca[i + 7 + n].classList.contains("a4") ||
+                  pontoPeca[i + 7 + n].classList.contains("a5") ||
+                  pontoPeca[i + 7 + n].classList.contains("a6") ||
+                  pontoPeca[i + 7 + n].classList.contains("a7") ||
+                  pontoPeca[i + 7 + n].classList.contains("h2") ||
+                  pontoPeca[i + 7 + n].classList.contains("h3") ||
+                  pontoPeca[i + 7 + n].classList.contains("h4") ||
+                  pontoPeca[i + 7 + n].classList.contains("h5") ||
+                  pontoPeca[i + 7 + n].classList.contains("h6") ||
+                  pontoPeca[i + 7 + n].classList.contains("h7")
                 ) {
-                  if (pontoPeca[c + 7 + n + 7] === undefined) {
-                    break;
-                  } else {
-                    pontoPeca[c + 7 + n + 7].classList.add("ativo");
-                    break;
-                  }
+                  console.log("oi");
+                  break;
                 }
               }
-              for (let n = 0; ; n += 9) {
-                if (pontoPeca[c - 9]) {
-                  if (pontoPeca[c - 9 - n].classList.contains("branco")) {
-                    break;
-                  }
-                  pontoPeca[c - 9 - n].classList.add("ativo");
-                  if (pontoPeca[c - 9 - n].classList.contains("preto")) {
-                    break;
-                  }
+            }
+            if (pontoPeca[i].classList.contains("movimento")) {
+              for (let n = 0; ; n += 7) {
+                if (pontoPeca[i - 7 - n].classList.contains("branco")) {
+                  break;
+                }
+                if (pontoPeca[i - 7 - n].classList.contains("preto")) {
+                  pontoPeca[i - 7 - n].classList.add("ativo");
+                  console.log("oi");
+                  break;
                 }
 
-                if (pontoPeca[c - 9 - n - 9] === undefined) {
+                if (
+                  pontoPeca[i - 7 - n].classList.contains("h8") ||
+                  pontoPeca[i - 7 - n].classList.contains("g8") ||
+                  pontoPeca[i - 7 - n].classList.contains("f8") ||
+                  pontoPeca[i - 7 - n].classList.contains("e8") ||
+                  pontoPeca[i - 7 - n].classList.contains("d8") ||
+                  pontoPeca[i - 7 - n].classList.contains("c8") ||
+                  pontoPeca[i - 7 - n].classList.contains("b8") ||
+                  pontoPeca[i - 7 - n].classList.contains("a8") ||
+                  pontoPeca[i - 7 - n].classList.contains("h1") ||
+                  pontoPeca[i - 7 - n].classList.contains("g1") ||
+                  pontoPeca[i - 7 - n].classList.contains("e1") ||
+                  pontoPeca[i - 7 - n].classList.contains("d1") ||
+                  pontoPeca[i - 7 - n].classList.contains("c1") ||
+                  pontoPeca[i - 7 - n].classList.contains("b1") ||
+                  pontoPeca[i - 7 - n].classList.contains("a1") ||
+                  pontoPeca[i - 7 - n].classList.contains("a2") ||
+                  pontoPeca[i - 7 - n].classList.contains("a3") ||
+                  pontoPeca[i - 7 - n].classList.contains("a4") ||
+                  pontoPeca[i - 7 - n].classList.contains("a5") ||
+                  pontoPeca[i - 7 - n].classList.contains("a6") ||
+                  pontoPeca[i - 7 - n].classList.contains("a7") ||
+                  pontoPeca[i - 7 - n].classList.contains("h2") ||
+                  pontoPeca[i - 7 - n].classList.contains("h3") ||
+                  pontoPeca[i - 7 - n].classList.contains("h4") ||
+                  pontoPeca[i - 7 - n].classList.contains("h5") ||
+                  pontoPeca[i - 7 - n].classList.contains("h6") ||
+                  pontoPeca[i - 7 - n].classList.contains("h7")
+                ) {
+                  console.log("oi");
                   break;
                 }
               }
@@ -63,56 +104,96 @@ export default function initiMovimentoBispoBranco() {
       }
     } else if (tabuleiro.classList.contains("movimentoPreto")) {
       if (events.target.className === "bispoPreto") {
-        for (let c = 0; c < pontoPeca.length; c++) {
-          if (
-            pontoPeca[c].classList.contains("ativo") &&
-            pontoPeca[c].classList.contains("preto") &&
-            pontoPeca[c].classList.contains("movimento")
-          ) {
-            if (pontoPeca[c - 7]) {
-              for (let n = 0; ; n += 7) {
-                if (pontoPeca[c - 7]) {
-                  if (pontoPeca[c - 7 - n].classList.contains("preto")) {
-                    break;
-                  }
-                  pontoPeca[c - 7 - n].classList.add("ativo");
-                  if (pontoPeca[c - 7 - n].classList.contains("branco")) {
-                    break;
-                  }
-                }
-                if (
-                  pontoPeca[c - 7 - n - 7] === undefined ||
-                  pontoPeca[c - 7 - n - 7].classList.contains("h1") ||
-                  pontoPeca[c - 7 - n - 7].classList.contains("g1") ||
-                  pontoPeca[c - 7 - n - 7].classList.contains("f1") ||
-                  pontoPeca[c - 7 - n - 7].classList.contains("e1") ||
-                  pontoPeca[c - 7 - n - 7].classList.contains("d1") ||
-                  pontoPeca[c - 7 - n - 7].classList.contains("c1") ||
-                  pontoPeca[c - 7 - n - 7].classList.contains("b1") ||
-                  pontoPeca[c - 7 - n - 7].classList.contains("a1")
-                ) {
-                  if (pontoPeca[c - 7 - n - 7] === undefined) {
-                    break;
-                  } else {
-                    pontoPeca[c - 7 - n - 7].classList.add("ativo");
-                    break;
-                  }
-                }
+        for (let i = 0; i < pontoPeca.length; i++) {
+          if (pontoPeca[i].classList.contains("movimento")) {
+            for (let n = 0; ; n += 7) {
+              if (pontoPeca[i + 7 + n].classList.contains("preto")) {
+                break;
               }
-              for (let n = 0; ; n += 9) {
-                if (pontoPeca[c + 9]) {
-                  if (pontoPeca[c + 9 + n].classList.contains("preto")) {
-                    break;
-                  }
-                  pontoPeca[c + 9 + n].classList.add("ativo");
-                  if (pontoPeca[c + 9 + n].classList.contains("branco")) {
-                    break;
-                  }
-                }
-
-                if (pontoPeca[c + 9 + n + 9] === undefined) {
-                  break;
-                }
+              if (pontoPeca[i + 7 + n].classList.contains("branco")) {
+                pontoPeca[i + 7 + n].classList.add("ativo");
+                console.log("oi");
+                break;
+              }
+              pontoPeca[i + 7 + n].classList.add("ativo");
+              console.log(n);
+              if (
+                pontoPeca[i + 7 + n].classList.contains("h8") ||
+                pontoPeca[i + 7 + n].classList.contains("g8") ||
+                pontoPeca[i + 7 + n].classList.contains("f8") ||
+                pontoPeca[i + 7 + n].classList.contains("e8") ||
+                pontoPeca[i + 7 + n].classList.contains("d8") ||
+                pontoPeca[i + 7 + n].classList.contains("c8") ||
+                pontoPeca[i + 7 + n].classList.contains("b8") ||
+                pontoPeca[i + 7 + n].classList.contains("a8") ||
+                pontoPeca[i + 7 + n].classList.contains("h1") ||
+                pontoPeca[i + 7 + n].classList.contains("g1") ||
+                pontoPeca[i + 7 + n].classList.contains("e1") ||
+                pontoPeca[i + 7 + n].classList.contains("d1") ||
+                pontoPeca[i + 7 + n].classList.contains("c1") ||
+                pontoPeca[i + 7 + n].classList.contains("b1") ||
+                pontoPeca[i + 7 + n].classList.contains("a1") ||
+                pontoPeca[i + 7 + n].classList.contains("a2") ||
+                pontoPeca[i + 7 + n].classList.contains("a3") ||
+                pontoPeca[i + 7 + n].classList.contains("a4") ||
+                pontoPeca[i + 7 + n].classList.contains("a5") ||
+                pontoPeca[i + 7 + n].classList.contains("a6") ||
+                pontoPeca[i + 7 + n].classList.contains("a7") ||
+                pontoPeca[i + 7 + n].classList.contains("h2") ||
+                pontoPeca[i + 7 + n].classList.contains("h3") ||
+                pontoPeca[i + 7 + n].classList.contains("h4") ||
+                pontoPeca[i + 7 + n].classList.contains("h5") ||
+                pontoPeca[i + 7 + n].classList.contains("h6") ||
+                pontoPeca[i + 7 + n].classList.contains("h7")
+              ) {
+                console.log("oi");
+                break;
+              }
+            }
+          }
+          if (pontoPeca[i].classList.contains("movimento")) {
+            for (let n = 0; ; n += 7) {
+              if (pontoPeca[i - 7 - n].classList.contains("preto")) {
+                break;
+              }
+              if (pontoPeca[i - 7 - n].classList.contains("branco")) {
+                pontoPeca[i - 7 - n].classList.add("ativo");
+                console.log("oi");
+                break;
+              }
+              pontoPeca[i - 7 - n].classList.add("ativo");
+              console.log(n);
+              if (
+                pontoPeca[i - 7 - n].classList.contains("h8") ||
+                pontoPeca[i - 7 - n].classList.contains("g8") ||
+                pontoPeca[i - 7 - n].classList.contains("f8") ||
+                pontoPeca[i - 7 - n].classList.contains("e8") ||
+                pontoPeca[i - 7 - n].classList.contains("d8") ||
+                pontoPeca[i - 7 - n].classList.contains("c8") ||
+                pontoPeca[i - 7 - n].classList.contains("b8") ||
+                pontoPeca[i - 7 - n].classList.contains("a8") ||
+                pontoPeca[i - 7 - n].classList.contains("h1") ||
+                pontoPeca[i - 7 - n].classList.contains("g1") ||
+                pontoPeca[i - 7 - n].classList.contains("e1") ||
+                pontoPeca[i - 7 - n].classList.contains("d1") ||
+                pontoPeca[i - 7 - n].classList.contains("c1") ||
+                pontoPeca[i - 7 - n].classList.contains("b1") ||
+                pontoPeca[i - 7 - n].classList.contains("a1") ||
+                pontoPeca[i - 7 - n].classList.contains("a2") ||
+                pontoPeca[i - 7 - n].classList.contains("a3") ||
+                pontoPeca[i - 7 - n].classList.contains("a4") ||
+                pontoPeca[i - 7 - n].classList.contains("a5") ||
+                pontoPeca[i - 7 - n].classList.contains("a6") ||
+                pontoPeca[i - 7 - n].classList.contains("a7") ||
+                pontoPeca[i - 7 - n].classList.contains("h2") ||
+                pontoPeca[i - 7 - n].classList.contains("h3") ||
+                pontoPeca[i - 7 - n].classList.contains("h4") ||
+                pontoPeca[i - 7 - n].classList.contains("h5") ||
+                pontoPeca[i - 7 - n].classList.contains("h6") ||
+                pontoPeca[i - 7 - n].classList.contains("h7")
+              ) {
+                console.log("oi");
+                break;
               }
             }
           }
