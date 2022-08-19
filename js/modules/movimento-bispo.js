@@ -59,60 +59,7 @@ export default function initiMovimentoBispo() {
                 }
               }
             }
-            if (pontoPeca[i].classList.contains("movimento")) {
-              for (let n = 0; ; n += 7) {
-                if (
-                  pontoPeca[i].classList.contains("a1") ||
-                  pontoPeca[i].classList.contains("a2") ||
-                  pontoPeca[i].classList.contains("a3") ||
-                  pontoPeca[i].classList.contains("a4") ||
-                  pontoPeca[i].classList.contains("a5") ||
-                  pontoPeca[i].classList.contains("a6") ||
-                  pontoPeca[i].classList.contains("a7") ||
-                  pontoPeca[i].classList.contains("a8") ||
-                  pontoPeca[i].classList.contains("b1") ||
-                  pontoPeca[i].classList.contains("c1") ||
-                  pontoPeca[i].classList.contains("d1") ||
-                  pontoPeca[i].classList.contains("e1") ||
-                  pontoPeca[i].classList.contains("f1") ||
-                  pontoPeca[i].classList.contains("g1") ||
-                  pontoPeca[i].classList.contains("h1")
-                ) {
-                  break;
-                }
-                if (pontoPeca[i - 7 - n].classList.contains("branco")) {
-                  break;
-                }
-                if (pontoPeca[i - 7 - n].classList.contains("preto")) {
-                  pontoPeca[i - 7 - n].classList.add("ativo");
 
-                  break;
-                }
-                if (pontoPeca[i - 7 - n]) {
-                  pontoPeca[i - 7 - n].classList.add("ativo");
-                }
-
-                if (
-                  pontoPeca[i - 7 - n].classList.contains("a1") ||
-                  pontoPeca[i - 7 - n].classList.contains("a2") ||
-                  pontoPeca[i - 7 - n].classList.contains("a3") ||
-                  pontoPeca[i - 7 - n].classList.contains("a4") ||
-                  pontoPeca[i - 7 - n].classList.contains("a5") ||
-                  pontoPeca[i - 7 - n].classList.contains("a6") ||
-                  pontoPeca[i - 7 - n].classList.contains("a7") ||
-                  pontoPeca[i - 7 - n].classList.contains("a8") ||
-                  pontoPeca[i - 7 - n].classList.contains("b1") ||
-                  pontoPeca[i - 7 - n].classList.contains("c1") ||
-                  pontoPeca[i - 7 - n].classList.contains("d1") ||
-                  pontoPeca[i - 7 - n].classList.contains("e1") ||
-                  pontoPeca[i - 7 - n].classList.contains("f1") ||
-                  pontoPeca[i - 7 - n].classList.contains("g1") ||
-                  pontoPeca[i - 7 - n].classList.contains("h1")
-                ) {
-                  break;
-                }
-              }
-            }
             if (pontoPeca[i].classList.contains("movimento")) {
               for (let n = 0; ; n += 7) {
                 if (
@@ -204,7 +151,7 @@ export default function initiMovimentoBispo() {
               if (pontoPeca[i + 7 + n]) {
                 pontoPeca[i + 7 + n].classList.add("ativo");
               }
-              console.log(n);
+
               if (
                 pontoPeca[i + 7 + n].classList.contains("h1") ||
                 pontoPeca[i + 7 + n].classList.contains("h2") ||
