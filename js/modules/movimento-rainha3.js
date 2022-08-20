@@ -1,4 +1,4 @@
-export default function initiMovimentoTorre() {
+export default function initiMovimentoRainha3() {
   const pontoPeca = Array.from(document.querySelectorAll("div"));
   const eventos = ["click", "tochstart"];
   const tabuleiro = document.querySelector(".tabuleiro");
@@ -6,7 +6,7 @@ export default function initiMovimentoTorre() {
   function pontoDoClick(events) {
     if (tabuleiro.classList.contains("movimentoBranco")) {
       {
-        if (events.target.className === "torreBranca") {
+        if (events.target.className === "rainhaBranca") {
           for (let i = 0; i < pontoPeca.length; i++) {
             if (pontoPeca[i].classList.contains("movimento")) {
               for (let n = 0; ; n += 1) {
@@ -89,7 +89,7 @@ export default function initiMovimentoTorre() {
         }
       }
     } else if (tabuleiro.classList.contains("movimentoPreto")) {
-      if (events.target.className === "torrePreta") {
+      if (events.target.className === "rainhaPreta") {
         for (let i = 0; i < pontoPeca.length; i++) {
           if (pontoPeca[i].classList.contains("movimento")) {
             for (let n = 0; ; n += 1) {

@@ -28,6 +28,7 @@ div {
   font-size: 2rem;
   text-align: center;
   font-weight: bolder;
+  border: solid 1px transparent;
 }
 
 .cavaloBranco,

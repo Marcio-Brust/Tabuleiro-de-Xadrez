@@ -1,4 +1,4 @@
-export default function initiMovimentoBispo() {
+export default function initiMovimentoRainha() {
   const pontoPeca = Array.from(document.querySelectorAll("div"));
   const eventos = ["click", "tochstart"];
   const tabuleiro = document.querySelector(".tabuleiro");
@@ -6,7 +6,7 @@ export default function initiMovimentoBispo() {
   function pontoDoClick(events) {
     if (tabuleiro.classList.contains("movimentoBranco")) {
       {
-        if (events.target.className === "bispoBranco") {
+        if (events.target.className === "rainhaBranca") {
           for (let i = 0; i < pontoPeca.length; i++) {
             if (pontoPeca[i].classList.contains("movimento")) {
               for (let n = 0; ; n += 7) {
@@ -118,7 +118,7 @@ export default function initiMovimentoBispo() {
         }
       }
     } else if (tabuleiro.classList.contains("movimentoPreto")) {
-      if (events.target.className === "bispoPreto") {
+      if (events.target.className === "rainhaPreta") {
         for (let i = 0; i < pontoPeca.length; i++) {
           if (pontoPeca[i].classList.contains("movimento")) {
             for (let n = 0; ; n += 7) {
