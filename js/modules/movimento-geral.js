@@ -5,7 +5,7 @@ const eventos = ["click", "tochstart"];
 
 //console.log(pecasBrancas);
 
-function movimentoGeral(events) {
+function movimentoGeral() {
   const peca = document.querySelector(".ativo.branco.movimento");
   const pecaPreta = document.querySelector(".ativo.preto.movimento");
   const tabuleiro = document.querySelector(".tabuleiro");

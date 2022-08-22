@@ -1,25 +1,20 @@
 export default function initiMovimentoCaptura() {
   const pontoPeca = Array.from(document.querySelectorAll("div"));
-  const eventos = ["click", "tochstart"];
+  const eventos = ["Load"];
   const tabuleiro = document.querySelector(".tabuleiro");
-
   function captura() {
     for (let c = 0; c < pontoPeca.length; c++) {
       if (pontoPeca[c].innerHTML === '<span class="peaoBranco">♙</span>') {
-        if (pontoPeca[c + 7]) pontoPeca[c + 7].classList.add("captura");
-      }
-      if (
-        pontoPeca[c].innerHTML === "" &&
-        pontoPeca[c].classList.contains("capture")
-      ) {
-        pontoPeca[c].classList.remove("capture");
+        if (pontoPeca[c].classList.contains("branco")) {
+          if (pontoPeca[c + 7]) {
+            pontoPeca[c + 7].classList.add("captura");
+          }
+        }
+        if (pontoPeca[c - 9]) {
+          pontoPeca[c - 9].classList.add("captura");
+        }
       }
     }
   }
-
-  pontoPeca.forEach((item) => {
-    eventos.forEach((click) => {
-      item.addEventListener(click, captura());
-    });
-  });
+  captura();
 }
