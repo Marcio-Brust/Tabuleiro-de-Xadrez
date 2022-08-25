@@ -9,6 +9,7 @@ export default function initiAddClass() {
             for (let i = 0; i < elemento.length; i++) {
               elemento[i].classList.remove(classe);
               elemento[i].classList.remove("movimento");
+              elemento[i].classList.remove("captura");
             }
           } else {
             for (let i = 0; i < elemento.length; i++) {
