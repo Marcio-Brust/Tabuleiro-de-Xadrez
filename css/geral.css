@@ -17,6 +17,7 @@ nav {
 
 .tabuleiro {
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: repeat(9, 3rem);
   grid-template-rows: repeat(9, 3rem);
   max-width: fit-content;

@@ -2,7 +2,12 @@ div.ativo {
   border: solid 1px red;
   box-sizing: border-box;
 }
-div.captura {
+/* div.captura {
   border: solid 1px rgb(180, 5, 233);
   box-sizing: border-box;
 }
+
+div.capturaPreto {
+  border: solid 1px rgb(233, 229, 5);
+}
+ */
