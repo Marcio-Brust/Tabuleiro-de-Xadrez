@@ -4,7 +4,10 @@ export default function initiMovimentoBispo2() {
   const tabuleiro = document.querySelector(".tabuleiro");
   function pontoDoClick(events) {
     if (tabuleiro.classList.contains("movimentoBranco")) {
-      if (events.target.className === "bispoBranco") {
+      if (
+        events.target.className === "bispoBranco" ||
+        events.target.className === "rainhaBranca"
+      ) {
         for (let i = 0; i < pontoPeca.length; i++) {
           if (pontoPeca[i].classList.contains("movimento")) {
             for (let n = 0; ; n += 9) {
@@ -115,7 +118,10 @@ export default function initiMovimentoBispo2() {
         }
       }
     } else if (tabuleiro.classList.contains("movimentoPreto")) {
-      if (events.target.className === "bispoPreto") {
+      if (
+        events.target.className === "bispoPreto" ||
+        events.target.className === "rainhaPreta"
+      ) {
         for (let i = 0; i < pontoPeca.length; i++) {
           if (pontoPeca[i].classList.contains("movimento")) {
             for (let n = 0; ; n += 9) {

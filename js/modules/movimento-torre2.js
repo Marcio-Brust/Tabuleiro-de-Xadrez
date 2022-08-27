@@ -6,7 +6,10 @@ export default function initiMovimentoTorre2() {
   function pontoDoClick(events) {
     if (tabuleiro.classList.contains("movimentoBranco")) {
       {
-        if (events.target.className === "torreBranca") {
+        if (
+          events.target.className === "torreBranca" ||
+          events.target.className === "rainhaBranca"
+        ) {
           for (let i = 0; i < pontoPeca.length; i++) {
             if (pontoPeca[i].classList.contains("movimento")) {
               for (let n = 0; ; n += 8) {
@@ -88,7 +91,10 @@ export default function initiMovimentoTorre2() {
         }
       }
     } else if (tabuleiro.classList.contains("movimentoPreto")) {
-      if (events.target.className === "torrePreta") {
+      if (
+        events.target.className === "torrePreta" ||
+        events.target.className === "rainhaPreta"
+      ) {
         for (let i = 0; i < pontoPeca.length; i++) {
           if (pontoPeca[i].classList.contains("movimento")) {
             for (let n = 0; ; n += 8) {

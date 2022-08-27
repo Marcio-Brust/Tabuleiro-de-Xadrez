@@ -6,7 +6,10 @@ export default function initiMovimentoCavalo() {
   function pontoDoClick(events) {
     console.log("oi");
     if (tabuleiro.classList.contains("movimentoBranco")) {
-      if (events.target.className === "cavaloBranco") {
+      if (
+        events.target.className === "cavaloBranco" ||
+        events.target.className === "cavaloPreto"
+      ) {
         for (let i = 0; i < pontoPeca.length; i++) {
           if (
             pontoPeca[i].classList.contains("ativo") &&
