@@ -802,6 +802,394 @@ export default function initiMovimentoCaptura() {
           }
         }
       }
+      if (pontoPeca[c].innerHTML === '<span class="cavaloBranco">♘</span>') {
+        if (
+          pontoPeca[c].id === "h1" ||
+          pontoPeca[c].id === "h2" ||
+          pontoPeca[c].id === "h3" ||
+          pontoPeca[c].id === "h3" ||
+          pontoPeca[c].id === "h4" ||
+          pontoPeca[c].id === "h5" ||
+          pontoPeca[c].id === "h5" ||
+          pontoPeca[c].id === "h6" ||
+          pontoPeca[c].id === "h7" ||
+          pontoPeca[c].id === "h8" ||
+          pontoPeca[c].id === "b7" ||
+          pontoPeca[c].id === "b8" ||
+          pontoPeca[c].id === "c7" ||
+          pontoPeca[c].id === "c8" ||
+          pontoPeca[c].id === "d7" ||
+          pontoPeca[c].id === "d8" ||
+          pontoPeca[c].id === "e7" ||
+          pontoPeca[c].id === "e8" ||
+          pontoPeca[c].id === "f7" ||
+          pontoPeca[c].id === "f8" ||
+          pontoPeca[c].id === "g7" ||
+          pontoPeca[c].id === "g8" ||
+          pontoPeca[c].id === "h7" ||
+          pontoPeca[c].id === "h8"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c + 6]) {
+            pontoPeca[c + 6].classList.add("captura");
+          }
+        }
+        if (
+          pontoPeca[c].id === "h1" ||
+          pontoPeca[c].id === "h2" ||
+          pontoPeca[c].id === "h3" ||
+          pontoPeca[c].id === "h3" ||
+          pontoPeca[c].id === "h4" ||
+          pontoPeca[c].id === "h5" ||
+          pontoPeca[c].id === "h5" ||
+          pontoPeca[c].id === "h6" ||
+          pontoPeca[c].id === "h7" ||
+          pontoPeca[c].id === "h8" ||
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "a2" ||
+          pontoPeca[c].id === "b1" ||
+          pontoPeca[c].id === "b2" ||
+          pontoPeca[c].id === "c1" ||
+          pontoPeca[c].id === "c2" ||
+          pontoPeca[c].id === "d1" ||
+          pontoPeca[c].id === "d2" ||
+          pontoPeca[c].id === "e1" ||
+          pontoPeca[c].id === "e2" ||
+          pontoPeca[c].id === "f1" ||
+          pontoPeca[c].id === "f2" ||
+          pontoPeca[c].id === "g1" ||
+          pontoPeca[c].id === "g2"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c + 10]) {
+            pontoPeca[c + 10].classList.add("captura");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a8" ||
+          pontoPeca[c].id === "b8" ||
+          pontoPeca[c].id === "c8" ||
+          pontoPeca[c].id === "d8" ||
+          pontoPeca[c].id === "e8" ||
+          pontoPeca[c].id === "f8" ||
+          pontoPeca[c].id === "g8" ||
+          pontoPeca[c].id === "h8"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c + 15]) {
+            pontoPeca[c + 15].classList.add("captura");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "b1" ||
+          pontoPeca[c].id === "c1" ||
+          pontoPeca[c].id === "d1" ||
+          pontoPeca[c].id === "e1" ||
+          pontoPeca[c].id === "f1" ||
+          pontoPeca[c].id === "g1" ||
+          pontoPeca[c].id === "h1"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c + 17]) {
+            pontoPeca[c + 17].classList.add("captura");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "a2" ||
+          pontoPeca[c].id === "a3" ||
+          pontoPeca[c].id === "a3" ||
+          pontoPeca[c].id === "a4" ||
+          pontoPeca[c].id === "a5" ||
+          pontoPeca[c].id === "a5" ||
+          pontoPeca[c].id === "a6" ||
+          pontoPeca[c].id === "a7" ||
+          pontoPeca[c].id === "a8" ||
+          pontoPeca[c].id === "b1" ||
+          pontoPeca[c].id === "b2" ||
+          pontoPeca[c].id === "c1" ||
+          pontoPeca[c].id === "c2" ||
+          pontoPeca[c].id === "d1" ||
+          pontoPeca[c].id === "d2" ||
+          pontoPeca[c].id === "e1" ||
+          pontoPeca[c].id === "e2" ||
+          pontoPeca[c].id === "f1" ||
+          pontoPeca[c].id === "f2" ||
+          pontoPeca[c].id === "g1" ||
+          pontoPeca[c].id === "g2" ||
+          pontoPeca[c].id === "h1" ||
+          pontoPeca[c].id === "h2"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c - 6]) {
+            pontoPeca[c - 6].classList.add("captura");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "a2" ||
+          pontoPeca[c].id === "a3" ||
+          pontoPeca[c].id === "a3" ||
+          pontoPeca[c].id === "a4" ||
+          pontoPeca[c].id === "a5" ||
+          pontoPeca[c].id === "a5" ||
+          pontoPeca[c].id === "a6" ||
+          pontoPeca[c].id === "a7" ||
+          pontoPeca[c].id === "a8" ||
+          pontoPeca[c].id === "b7" ||
+          pontoPeca[c].id === "b8" ||
+          pontoPeca[c].id === "c7" ||
+          pontoPeca[c].id === "c8" ||
+          pontoPeca[c].id === "d7" ||
+          pontoPeca[c].id === "d8" ||
+          pontoPeca[c].id === "e7" ||
+          pontoPeca[c].id === "e8" ||
+          pontoPeca[c].id === "f7" ||
+          pontoPeca[c].id === "f8" ||
+          pontoPeca[c].id === "g7" ||
+          pontoPeca[c].id === "g8" ||
+          pontoPeca[c].id === "h7" ||
+          pontoPeca[c].id === "h8"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c - 10]) {
+            pontoPeca[c - 10].classList.add("captura");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "b1" ||
+          pontoPeca[c].id === "c1" ||
+          pontoPeca[c].id === "d1" ||
+          pontoPeca[c].id === "e1" ||
+          pontoPeca[c].id === "f1" ||
+          pontoPeca[c].id === "g1" ||
+          pontoPeca[c].id === "h1"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c - 15]) {
+            pontoPeca[c - 15].classList.add("captura");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a8" ||
+          pontoPeca[c].id === "b8" ||
+          pontoPeca[c].id === "c8" ||
+          pontoPeca[c].id === "d8" ||
+          pontoPeca[c].id === "e8" ||
+          pontoPeca[c].id === "f8" ||
+          pontoPeca[c].id === "g8" ||
+          pontoPeca[c].id === "h8"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c - 17]) {
+            pontoPeca[c - 17].classList.add("captura");
+          }
+        }
+      }
+      if (pontoPeca[c].innerHTML === '<span class="cavaloPreto">♞</span>') {
+        if (
+          pontoPeca[c].id === "h1" ||
+          pontoPeca[c].id === "h2" ||
+          pontoPeca[c].id === "h3" ||
+          pontoPeca[c].id === "h3" ||
+          pontoPeca[c].id === "h4" ||
+          pontoPeca[c].id === "h5" ||
+          pontoPeca[c].id === "h5" ||
+          pontoPeca[c].id === "h6" ||
+          pontoPeca[c].id === "h7" ||
+          pontoPeca[c].id === "h8" ||
+          pontoPeca[c].id === "b7" ||
+          pontoPeca[c].id === "b8" ||
+          pontoPeca[c].id === "c7" ||
+          pontoPeca[c].id === "c8" ||
+          pontoPeca[c].id === "d7" ||
+          pontoPeca[c].id === "d8" ||
+          pontoPeca[c].id === "e7" ||
+          pontoPeca[c].id === "e8" ||
+          pontoPeca[c].id === "f7" ||
+          pontoPeca[c].id === "f8" ||
+          pontoPeca[c].id === "g7" ||
+          pontoPeca[c].id === "g8" ||
+          pontoPeca[c].id === "h7" ||
+          pontoPeca[c].id === "h8"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c + 6]) {
+            pontoPeca[c + 6].classList.add("capturaPreto");
+          }
+        }
+        if (
+          pontoPeca[c].id === "h1" ||
+          pontoPeca[c].id === "h2" ||
+          pontoPeca[c].id === "h3" ||
+          pontoPeca[c].id === "h3" ||
+          pontoPeca[c].id === "h4" ||
+          pontoPeca[c].id === "h5" ||
+          pontoPeca[c].id === "h5" ||
+          pontoPeca[c].id === "h6" ||
+          pontoPeca[c].id === "h7" ||
+          pontoPeca[c].id === "h8" ||
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "a2" ||
+          pontoPeca[c].id === "b1" ||
+          pontoPeca[c].id === "b2" ||
+          pontoPeca[c].id === "c1" ||
+          pontoPeca[c].id === "c2" ||
+          pontoPeca[c].id === "d1" ||
+          pontoPeca[c].id === "d2" ||
+          pontoPeca[c].id === "e1" ||
+          pontoPeca[c].id === "e2" ||
+          pontoPeca[c].id === "f1" ||
+          pontoPeca[c].id === "f2" ||
+          pontoPeca[c].id === "g1" ||
+          pontoPeca[c].id === "g2"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c + 10]) {
+            pontoPeca[c + 10].classList.add("capturaPreto");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a8" ||
+          pontoPeca[c].id === "b8" ||
+          pontoPeca[c].id === "c8" ||
+          pontoPeca[c].id === "d8" ||
+          pontoPeca[c].id === "e8" ||
+          pontoPeca[c].id === "f8" ||
+          pontoPeca[c].id === "g8" ||
+          pontoPeca[c].id === "h8"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c + 15]) {
+            pontoPeca[c + 15].classList.add("capturaPreto");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "b1" ||
+          pontoPeca[c].id === "c1" ||
+          pontoPeca[c].id === "d1" ||
+          pontoPeca[c].id === "e1" ||
+          pontoPeca[c].id === "f1" ||
+          pontoPeca[c].id === "g1" ||
+          pontoPeca[c].id === "h1"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c + 17]) {
+            pontoPeca[c + 17].classList.add("capturaPreto");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "a2" ||
+          pontoPeca[c].id === "a3" ||
+          pontoPeca[c].id === "a3" ||
+          pontoPeca[c].id === "a4" ||
+          pontoPeca[c].id === "a5" ||
+          pontoPeca[c].id === "a5" ||
+          pontoPeca[c].id === "a6" ||
+          pontoPeca[c].id === "a7" ||
+          pontoPeca[c].id === "a8" ||
+          pontoPeca[c].id === "b1" ||
+          pontoPeca[c].id === "b2" ||
+          pontoPeca[c].id === "c1" ||
+          pontoPeca[c].id === "c2" ||
+          pontoPeca[c].id === "d1" ||
+          pontoPeca[c].id === "d2" ||
+          pontoPeca[c].id === "e1" ||
+          pontoPeca[c].id === "e2" ||
+          pontoPeca[c].id === "f1" ||
+          pontoPeca[c].id === "f2" ||
+          pontoPeca[c].id === "g1" ||
+          pontoPeca[c].id === "g2" ||
+          pontoPeca[c].id === "h1" ||
+          pontoPeca[c].id === "h2"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c - 6]) {
+            pontoPeca[c - 6].classList.add("capturaPreto");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "a2" ||
+          pontoPeca[c].id === "a3" ||
+          pontoPeca[c].id === "a3" ||
+          pontoPeca[c].id === "a4" ||
+          pontoPeca[c].id === "a5" ||
+          pontoPeca[c].id === "a5" ||
+          pontoPeca[c].id === "a6" ||
+          pontoPeca[c].id === "a7" ||
+          pontoPeca[c].id === "a8" ||
+          pontoPeca[c].id === "b7" ||
+          pontoPeca[c].id === "b8" ||
+          pontoPeca[c].id === "c7" ||
+          pontoPeca[c].id === "c8" ||
+          pontoPeca[c].id === "d7" ||
+          pontoPeca[c].id === "d8" ||
+          pontoPeca[c].id === "e7" ||
+          pontoPeca[c].id === "e8" ||
+          pontoPeca[c].id === "f7" ||
+          pontoPeca[c].id === "f8" ||
+          pontoPeca[c].id === "g7" ||
+          pontoPeca[c].id === "g8" ||
+          pontoPeca[c].id === "h7" ||
+          pontoPeca[c].id === "h8"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c - 10]) {
+            pontoPeca[c - 10].classList.add("capturaPreto");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a1" ||
+          pontoPeca[c].id === "b1" ||
+          pontoPeca[c].id === "c1" ||
+          pontoPeca[c].id === "d1" ||
+          pontoPeca[c].id === "e1" ||
+          pontoPeca[c].id === "f1" ||
+          pontoPeca[c].id === "g1" ||
+          pontoPeca[c].id === "h1"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c - 15]) {
+            pontoPeca[c - 15].classList.add("capturaPreto");
+          }
+        }
+        if (
+          pontoPeca[c].id === "a8" ||
+          pontoPeca[c].id === "b8" ||
+          pontoPeca[c].id === "c8" ||
+          pontoPeca[c].id === "d8" ||
+          pontoPeca[c].id === "e8" ||
+          pontoPeca[c].id === "f8" ||
+          pontoPeca[c].id === "g8" ||
+          pontoPeca[c].id === "h8"
+        ) {
+          null;
+        } else {
+          if (pontoPeca[c - 17]) {
+            pontoPeca[c - 17].classList.add("capturaPreto");
+          }
+        }
+      }
     }
   }
   tabuleiro.addEventListener("click", captura);

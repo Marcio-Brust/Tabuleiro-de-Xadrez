@@ -12,6 +12,7 @@ import initiMovimentoTorre2 from "./modules/movimento-torre2.js";
 //import initiMovimentoRainha4 from "./modules/movimento-rainha4.js";
 import initiMovimentoCaptura from "./modules/movimento-captura.js";
 import initiMovimentoCavalo from "./modules/movimento-cavalo.js";
+import initiMovimentoRei from "./modules/movimento-rei.js";
 initiAddClass();
 initiMovimentoPeaoBranco();
 initiMovimentoPeaoPreto();
@@ -26,4 +27,5 @@ initiMovimentoTorre2();
 //initiMovimentoRainha4();
 initiMovimentoCaptura();
 initiMovimentoCavalo();
+initiMovimentoRei();
 /* Quando o span tiver a classe ativo a div irar fazer um loop com for e serar adiconado a classe ativo de acordo com a peça no span */

@@ -4,7 +4,6 @@ export default function initiMovimentoCavalo() {
   const tabuleiro = document.querySelector(".tabuleiro");
 
   function pontoDoClick(events) {
-    console.log("oi");
     if (tabuleiro.classList.contains("movimentoBranco")) {
       if (events.target.className === "cavaloBranco") {
         for (let i = 0; i < pontoPeca.length; i++) {
