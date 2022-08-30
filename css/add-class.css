@@ -1,6 +1,7 @@
 div.ativo {
   border: solid 1px red;
   box-sizing: border-box;
+  background: red;
 }
 /* div.captura {
   border: solid 1px rgb(180, 5, 233);
